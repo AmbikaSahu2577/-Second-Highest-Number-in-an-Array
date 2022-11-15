@@ -1,0 +1,23 @@
+class Second_Highest
+{
+	public static void main(String[] args) 
+	{
+	   int arr[]={1,2,3,4,5};
+	   int mini = arr[0];
+	   int smini = arr[1];
+
+	   for (int i=0;i<arr.length;i++) 
+	   {
+	   	   if (mini>arr[i]) 
+	   	   {
+	   	   		smini=mini;
+	   	   		mini=arr[i];
+	   	   	}
+	   	   	else if (arr[i]>mini && arr[i]<smini) 
+	   	   	{
+	   	   		smini=arr[i];
+	   	   	}	
+	   }
+	   System.out.println("smini="+smini);	
+	}
+}
